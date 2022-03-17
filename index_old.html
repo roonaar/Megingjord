@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="DhDatrOOqF-2f2uYVNUyCXwfbST5pZd69U_nKKtjHKs" />
+    <meta name="description" content="Kom i gang med behandling og trening hos fysioterapeut Regine Bjarnoll." />
+
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/responsive.js"></script>
+    <script src="https://kit.fontawesome.com/1fa25c76d6.js" crossorigin="anonymous"></script>
+
+    <title>Fysioterapeut Regine Bjarnoll</title>
+    
+</head>
+<body>
+    <nav class="nav nav-main" role="navigation">
+        <h3 class="nav-context">Fysioterapi</h3>
+        <i class="nav-opener fa fa-bars fa-xl clickable" onclick="toggle_menu()" tabindex="0" role="button" aria-label="Meny"></i>
+        <ul class="nav-drop-down" id="nav-drop-down" role="menu">
+            <li role="none"><a class="nav-item clickable" href="https://helse.aspit.no/landing?clinicId=06EADA0A-A030-4BEC-A477-5E198845B84C" tabindex="0" role="menuitem"><i class="fa-solid fa-calendar-plus fa-xl"></i> Bestill time</a></li>
+            <li class="nav-item clickable" onclick="toggle_modal_by_ID('modal-contact')" tabindex="0" role="menuitem"><i class="fa-solid fa-comments fa-xl"></i> Kontakt</li>
+            <li class="nav-item clickable" onclick="toggle_modal_by_ID('modal-pricing')" tabindex="0" role="menuitem"><i class="fa-solid fa-coins fa-xl"></i> Priser</li>
+            <li class="nav-item clickable" id="open-hrs" onclick="toggle_modal_by_ID('modal-open-hrs')" role="menuitem" tabindex="0"><i class="fa-solid fa-clock fa-xl"></i> Åpningstider</li>
+        </ul>
+        <a href="https://helse.aspit.no/landing?clinicId=06EADA0A-A030-4BEC-A477-5E198845B84C" class="btn nav-order clickable" role="button"><i class="fa-solid fa-calendar-plus"></i> Bestill time</a>
+    </nav>
+    <main role="main">
+        <article class="content-container" tabindex="0" aria-label="Introduksjon">
+            <img src="imgs/logo.png" alt="Fysioterapeut Regine Bjarnoll sin logo." role="img" tabindex="0">
+            <section class="content-section" tabindex="0">
+                <p>Regine ble utdannet fysioterapeut ved Universitetet i Syddanmark avd Esbjerg i 2016. Hun har siden det jobbet som privat fysioterapeut i Bergensområdet og driver nå sin egen klinikk på Midttun. Hun har erfaring med å jobbe med pasienter i alle aldre, og har i tillegg erfaring fra arbeid med unge og voksne idrettsutøvere, både på bredde- og toppnivå.</p>
+                <p>Utover fysioterapiutdannelsen har Regine medisin grunnfag fra Atlantis Medisinske Høyskole og årsenhet i ernæring ved Høyskolen Kristiania. Hun har også videreutdannelse i neuromotorisk trening og NIMI idrettsmedisin 1 og 2.</p>
+            </section>
+        </article>
+        <article class="content-container" id="experience" tabindex="0" aria-label="Erfaring">
+            <h2 class="space-l theme-1">Erfaring</h2>
+            <section class="content-section">
+                <a class="clickable card rounded card-wrapper" href="https://www.idrettsforbundet.no" tabindex="0">
+                    <img src="imgs/Regine_01.png"alt="">
+                    <section>
+                        <h4>Norges Idrettsforbund</h4>
+                        <p>Fysioterapeut og basistrener for Toppidrettslinjen</p>
+                        <p>Fysioterapeut i Olympiatoppen Vest sitt eksterne behandlernettverk</p>
+                        <p>Deltaker i Olympiatoppen Next Generation program 2018/19</p>
+                    </section>
+                </a>
+                <a class="clickable card rounded card-wrapper" href="https://www.brann.no/lag/sk-brann-kvinner" tabindex="0">
+                    <img src="imgs/Regine_02.png" alt="">
+                    <section>
+                        <h4>IL Sandviken Toppfotball</h4>
+                        <p>Fysioterapeut</p>
+                    </section>
+                </a>
+                <a class="card rounded card-wrapper clickable" href="https://www.fanail.no" tabindex="0">
+                    <img src="imgs/Regine_03.png" alt="">
+                    <section>
+                        <h4>Fana IL og Fana IL Fotball</h4>
+                        <p>Fysioterapeut</p>
+                    </section>
+                </a>
+                <div class="card rounded card-wrapper clickable" tabindex="0">
+                    <img src="imgs/Regine_01.png" alt="">
+                    <section>
+                        <h4>Førevar AS</h4>
+                        <p>Leverandør av bedriftshelsetjenester.</p>
+                    </section>
+                </div>
+                <a class="card rounded card-wrapper clickable" href="https://www.equinor.no" tabindex="0">
+                    <img src="imgs/Regine_04.png" alt="">
+                    <div>
+                        <h4>Equinor</h4>
+                        <p>Leverandør av fysioterapi og trening for Equinor Mongstad</p>
+                    </div>
+                </a>
+                <a class="card rounded card-wrapper clickable" href="https://games.crossfit.com/regionals/overview" tabindex="0">
+                    <img src="imgs/Regine_05.png" alt="">
+                    <section>
+                        <h4>CrossFit Games Regionals</h4>
+                        <p>Akuttmedisinsk fysioterapeut ved EM i Crossfit, Madrid, 2016</p>
+                    </section>
+                </a>
+                <div class="card rounded card-wrapper clickable" tabindex="0">
+                    <img src="imgs/Regine_02.png"  alt="">
+                    <section>
+                        <h4>Hordaland Idrettsmedisinske forening</h4>
+                        <p>Styremedlem</p>
+                    </section>
+                </div>
+            </section>
+        </article>
+        <article class="content-container" id="cooperation" tabindex="0" aria-label="Samarbeidspartnere">
+            <h2 class="theme-1 space-l">Samarbeidspartnere</h2>
+            <section class="content-section">
+                <!--<div class="card rounded card-wrapper clickable" tabindex="0">
+                    <img src="imgs/Regine_01.png"alt="">
+                    <div>
+                        <h4>FitFactory</h4>
+                        <p>Regine leverer PT-tjenester og gruppetrening.</p>
+                    </div>
+                </div>-->
+                <a class="card rounded card-wrapper clickable" href="https://www.basisball.com" tabindex="0">
+                    <img src="imgs/Regine_02.png"alt="">
+                    <section>
+                        <h4>BasisBall</h4>
+                        <p>Regine er BasisBall-trainer og -ambassadør.</p>
+                    </section>
+                </a>
+                <a class="card rounded card-wrapper clickable" href="https://www.behandlernettverk.no" tabindex="0">
+                    <img src="imgs/Regine_04.png"alt="">
+                    <section>
+                        <h4>Behandlernettverk.no</h4>
+                        <p>Regine er medlem av behandlernettverket som kobler forsikringsselskap og tjenesteleverandører med behandlere.</p>
+                        <p>Se hvilke selskap som er med i avtalen.</p>
+                    </section>
+                </a>
+                <a class="card rounded card-wrapper clickable" href="https://nordicnetcare.no" tabindex="0">
+                    <img src="imgs/Regine_06.png"alt="">
+                    <section>
+                        <h4>Nordic Netcare</h4>
+                        <p>Regine leverer fysioterapi for dette private helsetilbudet som koordinerer behandlingsforløpet for kunder hos en rekke forsikringsselskaper i Norge, Sverige og Danmark.</p>
+                    </section>
+                </a>
+                <a class="card rounded card-wrapper clickable" href="https://www.idrettshelse.no" tabindex="0">
+                    <img src="imgs/Regine_03.png"alt="">
+                    <section>
+                        <h4>Idrettens Helsesenter</h4>
+                        <p>Regine er fysioterapeut i behandlernettverket som er spesialisert mot idrettsrelaterte skader.</p>
+                    </section>
+                </a>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <nav class="nav nav-footer" role="navigation">
+            <ul role="menu">
+                <li class="nav-item clickable" onclick="scroll_to_top()" tabindex="0" role="menuitem">Til toppen</li>
+                <li class="nav-item clickable" onclick="scroll_to_element_by_ID('experience')" tabindex="0" role="menuitem">Erfaring</li>
+                <li class="nav-item clickable" onclick="scroll_to_element_by_ID('cooperation')" tabindex="0" role="menuitem">Samarbeidspartnere</li>
+            </ul>
+        </nav>
+    </footer>
+    <div class="modal" id="modal-contact" tabindex="0" aria-label="Vindu med kontaktinformasjon">
+        <div class="modal-content card rounded" tabindex="0" aria-label="Ring eller send e-post">
+            <h3>Ring eller send epost:</h3>
+            <div class="content">
+                <a href="tel:41793695" class="btn clickable" tabindex="0" role="button" aria-label="Telefonnummer 4 1 7 9 3 6 9 5. Trykk for å ringe."><i class="fa fa-phone fa-xl"></i> 417 93 695</a>
+                <a href="mailto:fysio@bjarnoll.no" class="btn clickable" tabindex="0" role="button" aria-label="Epost-adresse fysio@bjarnoll.no. Trykk for å sende epost."><i class="fa fa-at fa-xl"></i> fysio@bjarnoll.no</a>
+                <iframe
+                width="100%"
+                height="450"
+                style="border:0; margin-top: 2rem;"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBBhkjBfX9PwwEvo9J24W43aFetUaYZ9tU&q=Fysioterapeut+Regine+Bjarnoll,Bergen+Norway&zoom=12">
+                </iframe>
+            </div>
+            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-contact')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
+        </div>
+    </div>
+    <div class="modal" id="modal-pricing" tabindex="0" aria-label="Vindu med prisinformasjon">
+        <div class="modal-content card rounded">
+            <h2>Priser:</h2>
+            <section class="content">
+                <h4>Førstegangskonsultasjon</h4>
+                <p>kr 680,-</p>
+                <h4>Oppfølgende behandling</h4>
+                <p>kr 495,-</p>
+                <h4>Trykkbølgebehandling</h4>
+                <p>kr 750,-</p>
+                <h4>IMS dry needle</h4>
+                <p>kr 495,-</p>
+            </section>
+            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-pricing')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
+        </div>
+    </div>
+    <div class="modal" id="modal-open-hrs" tabindex="0" aria-label="Vindu med åpningstider">
+        <div class="modal-content card rounded">
+            <h2>Åpningstider:</h2>
+            <section class="content">
+                <h4>Mandag</h4>
+                <p>Stengt</p>
+                <h4>Tirsdag - Torsdag</h4>
+                <p>Åpent fra 10 til 15</p>
+                <h4>Fredag - Søndag</h4>
+                <p>Stengt</p>
+            </section>
+            <p><em>Telefonen besvares alle hverdager fra 9 til 15.</em></p>
+            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-open-hrs')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
+        </div>
+    </div>
+</body>
+</html>

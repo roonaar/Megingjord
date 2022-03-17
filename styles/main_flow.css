@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-color: snow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+main article{
+    padding: 3rem 0.5rem;
+    grid-column: 1/13;
+}
+
+main article h2{
+    text-align: center;
+    color: darkslategray;
+    text-shadow: 1px 1px slategray;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+}
+
+#intro img{
+    object-fit: contain;
+    align-self: center;
+}
+
+#intro section{
+    margin-top: 1rem;
+    max-width: 600px;
+    align-self: center;
+}
+
+#experience{
+    background-color: slategray;
+}
+
+#experience h2{
+    color: whitesmoke;
+    text-shadow: 1px 1px darkslategray;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: coral;
+    color: white;
+}
+
+.clickable:hover, .clickable:focus{
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.clickable.card:hover{
+    background-color: hsl(174, 33%, 85%);
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.rounded{
+    border-radius: 0.5rem;
+}
+
+.space-s{
+    margin: 0.5rem;
+}
+
+.space-l{
+    margin: 3rem 2rem 1rem;
+}
+
+#map{
+    height: 200px;
+    width: 200px;
+}
