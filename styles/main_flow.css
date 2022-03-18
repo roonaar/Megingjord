@@ -87,6 +87,16 @@ main article h2{
     margin: 3rem 2rem 1rem;
 }
 
+.center{
+    grid-column: 1/13;
+    text-align: center;
+}
+
+.center img{
+    margin: 0 0.5rem;
+    height: 2rem;
+}
+
 #map{
     height: 200px;
     width: 200px;
