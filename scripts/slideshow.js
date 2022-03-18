@@ -47,7 +47,7 @@ export function SlideShow(id) {
         }, false);
     }
 
-    const check_for_loaded_icons = async() => {
+    async function check_for_loaded_icons() {
         const done = document.documentElement.classList.contains('fontawesome-i2svg-complete');
         if (done) {
             console.log('done')
