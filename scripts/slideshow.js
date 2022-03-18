@@ -13,10 +13,9 @@ export function SlideShow(id) {
     function init() {
         show_slides();
         enable_touch();
-        //TODO: Make async:
-        setTimeout(() => {
-            enable_buttons();}, 1000); //Wait for icon resources to load first
-        
+        check_for_loaded_icons().then(() => {
+            enable_buttons()
+        }); //Wait for icon resources to load first
     };
 
     function show_slides(n) {
@@ -46,6 +45,18 @@ export function SlideShow(id) {
                 }
         }
         }, false);
+    }
+
+    const check_for_loaded_icons = async() => {
+        const done = document.documentElement.classList.contains('fontawesome-i2svg-complete');
+        if (done) {
+            console.log('done')
+            return Promise.resolve(done);
+        } else {
+            console.log('retry');
+            await new Promise(resolve => setTimeout(resolve, 5));
+            return check_for_loaded_icons();
+        }
     }
 
     function enable_buttons() {

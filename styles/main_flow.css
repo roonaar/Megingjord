@@ -58,7 +58,7 @@ main article h2{
     border-radius: 0.5rem;
     text-align: center;
     text-decoration: none;
-    background-color: coral;
+    background-color: hsl(16, 100%, 66%);
     color: white;
 }
 

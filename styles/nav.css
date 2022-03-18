@@ -25,6 +25,7 @@ footer .dev{
     grid-row: 3 / 4;
     text-align: center;
     text-decoration: none;
+    color: blueviolet;
 }
 
 .nav-context{

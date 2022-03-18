@@ -52,24 +52,19 @@ async function open_hrs_info(file) {
 
     let header = new Headers();
     header.append('credentials', 'omit');
-
     const options = {
         method: 'GET',
         headers: header,
         mode: 'cors',
         cache: 'default'
     };
-
     const url = "https://" + window.location.hostname + "/jsons/" + file;
-
     const request = new Request(url, options);
-
     const response = await fetch(request);
-
     const open_hrs = await response.json();
 
     const open_hr = open_hrs['day'][day]['hrs'][0];
-    const next_open_hr = open_hrs['day'][day + 1]['hrs'][0];
+    const next_open_hr = open_hrs['day'][(day + 1) % 7]['hrs'][0];
     const close_hr = open_hrs['day'][day]['hrs'][1];
 
     let el = document.getElementById('open-hrs');
