@@ -17,7 +17,7 @@ main article{
 
 main article h2{
     text-align: center;
-    color: darkslategray;
+    color: turquoise;
     text-shadow: 1px 1px slategray;
 }
 
@@ -44,6 +44,50 @@ main article h2{
 #experience h2{
     color: whitesmoke;
     text-shadow: 1px 1px darkslategray;
+}
+
+#published h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: turquoise;
+    text-shadow: 1px 1px darkslategray;
+}
+
+#published section{
+    max-width: 600px;
+    margin: auto;
+}
+
+#published section h2{
+    color: darkslategray;
+    text-shadow: none;
+    text-align: left;
+}
+
+#published span{
+    color: darkslategray;
+}
+
+#published time{
+    margin-left: 0.5rem;
+    color: slategray;
+}
+
+#published cite{
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#published cite .fa-quote-left, #published cite .fa-quote-right{
+    margin: 0 0.5rem;
+    color: slategray;
+}
+
+#published a{
+    display: block;
+    margin-top: 0.5rem;
+    color: darkslategray;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar{
