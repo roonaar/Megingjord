@@ -17,7 +17,7 @@ main article{
 
 main article h2{
     text-align: center;
-    color: turquoise;
+    color: slategray;
     text-shadow: 1px 1px slategray;
 }
 
@@ -37,11 +37,11 @@ main article h2{
     align-self: center;
 }
 
-#experience{
+#experience, #cooperation{
     background-color: slategray;
 }
 
-#experience h2{
+#experience h2, #cooperation h2{
     color: whitesmoke;
     text-shadow: 1px 1px darkslategray;
 }
@@ -49,7 +49,7 @@ main article h2{
 #published h1{
     margin-bottom: 2rem;
     text-align: center;
-    color: turquoise;
+    color: slategray;
     text-shadow: 1px 1px darkslategray;
 }
 
