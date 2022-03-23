@@ -1,0 +1,7 @@
+:root {
+    --text: #333;
+    --accent-color: hsl(16, 100%, 66%);
+    --accent-color-a: hsla(16, 100%, 66%, 0.9);
+    --element-bg: hsla(0, 100%, 99%, 0.6);
+    --element-bg-ln: linear-gradient(to right, hsla(24, 100%, 97%, 0.6), hsl(0, 100%, 99%, 0.6));
+}

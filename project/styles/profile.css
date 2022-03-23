@@ -1,0 +1,68 @@
+.profile {
+    display: flex;
+    margin: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    background-image: var(--element-bg-ln);
+    border-radius: 0.5rem;
+}
+
+.profile img {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.picture {
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.picture .lvl {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-color-a);
+}
+
+.picture .progress-bar {
+    z-index: -1;
+    position: absolute;
+    background-image: conic-gradient(hsl(0, 0%, 70%) 45deg, hsl(0, 0%, 0%) 45deg 360deg);
+    mix-blend-mode: overlay;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.details {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.profile .name {
+    font-size: 3rem;
+}
+
+.profile .department {
+    font-size: 1.5rem;
+    display: inline;
+}
+
+.profile span {
+    display: inline;
+}
+
+.profile .role {
+    display: inline;
+}

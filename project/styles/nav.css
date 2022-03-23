@@ -1,0 +1,54 @@
+.site-nav{
+    display: flex;
+    margin: 0.5rem;
+    background-image: var(--element-bg-ln);
+    border: solid 2px hsla(25, 100%, 97%, 60%);
+    border-radius: 0.5rem;
+}
+
+.menu{
+    align-self: center;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+
+.breadcrumb{
+    flex-basis: 100%;
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.breadcrumb li{
+    align-self: center;
+    display: inline;
+}
+
+.user{
+    position: relative;
+    display: flex;
+    align-self: center;
+    margin-right: 0.5rem;
+}
+
+.user img{
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+}
+
+.progress-bar {
+    z-index: -1;
+    position: absolute;
+    background-image: conic-gradient(hsl(0, 0%, 70%) 45deg, hsl(0, 0%, 0%) 45deg 360deg);
+    mix-blend-mode: overlay;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.user-name {
+    position: absolute;
+    right: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+}
