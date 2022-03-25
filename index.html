@@ -18,6 +18,16 @@
     <script type="module" src="./scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/1fa25c76d6.js" crossorigin="anonymous"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220987674-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-220987674-1');
+    </script>
+
     <title>Fysioterapeut Regine Bjarnoll</title>
     
 </head>
@@ -85,7 +95,7 @@
                     <a class="slide fade">
                         <img src="./imgs/Regine_03.png" alt="">
                         <h3>Vestland Idrettsmedisinske forening</h3>
-                        <p>Styremedlem</p>
+                        <p>Styremedlem 2017-2021</p>
                     </a>
                     <i class="prev-btn fa-solid fa-angle-left"></i>
                     <i class="next-btn fa-solid fa-angle-right"></i>
@@ -119,8 +129,8 @@
                         <h3>Nordic Netcare</h3>
                         <p>Regine leverer fysioterapi for dette private helsetilbudet som koordinerer behandlingsforløpet for kunder hos en rekke forsikringsselskaper i Norge, Sverige og Danmark.</p>
                     </a>
-                    <a class="slide fade" href="https://www.idrettshelse.no/">
-                        <img src="./imgs/Regine_04.png" alt="">
+                    <a class="slide fade" id="idrettshelse" href="https://www.idrettshelse.no/">
+                        <img src="./imgs/logos/svgs/idrettens_helsesenter.svg" alt="">
                         <h3>Idrettens Helsesenter</h3>
                         <p>Regine er fysioterapeut i behandlernettverket som er spesialisert mot idrettsrelaterte skader.</p>
                     </a>
@@ -282,6 +292,13 @@
                 <h4>IMS dry needle</h4>
                 <p>kr 495,-</p>
             </section>
+            <p><em>Avbestillingsfrist er senest 24 timer før avtaletid. Timer som kanselleres etter avbestillingsfristen faktureres med full pris.</em></p>
+            <details>
+                <summary>
+                    <p><strong>Nyhet!</strong> Studenter får nå 30 % rabatt</p>
+                </summary>
+                <p><em>Gyldig studentbevis må kunne fremvises på forespørsel.</em></p>
+            </details>
             <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-pricing')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
         </div>
     </div>

@@ -24,6 +24,14 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
+.modal details summary {
+    cursor: pointer;
+}
+
+.modal details summary p {
+    display: inline;
+}
+
 .close{
     position: absolute;
     top: 1rem;
