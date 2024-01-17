@@ -1,0 +1,32 @@
+/* This style sheet will contain declarations for the site's topography. Theme styling will be declared in dev/styles/theme.css */
+
+/* Remove the default margin and padding from the body element */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* The layout for the site's header. */
+header {
+    text-align: center;
+    width: 100%; /* Added to make the header span across the page */
+    display: flex; /* Added to enable flexbox layout */
+    justify-content: space-between; /* Added to distribute items across the header */
+    align-items: center; /* Added to vertically center items */
+}
+
+header img {
+    padding: 1rem; /* Added to add space around the logo */
+    width: 3rem; /* Set the width of the logo image */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* Style for the logo text */
+.logo-text {
+    /* Add your logo text styles here */
+}
+
+/* Style for the navigation items */
+.nav-items {
+    /* Add your navigation items styles here */
+}

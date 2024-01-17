@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1fa25c76d6.js" crossorigin="anonymous"></script>
+    <script src="./scripts/modal.js"></script>
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/flow.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <title>Megingjord</title>
+</head>
+
+<body>
+    <header>
+        <img src="./imgs/megingjord.png" alt="">
+        <h1>Megingjord</h1>
+        <p>Fysisk aktivitet for alle</p>
+    </header>
+    <nav>
+        <button type="button" class="btn" onclick="toggle_modal_by_ID('modal-contact')"><i class="fa-solid fa-comments"></i> Kontakt</button>
+        <button type="button" class="btn" id="order"><i class="fa-solid fa-calendar-day"></i> Bestill time</button>
+    </nav>
+    <main>
+        <article id="welcome">
+            <section class="statement">
+                <i class="fa-solid fa-handshake-simple fa-5x"></i>
+                <p class="larger center">Hos oss møter du dyktige og engasjerte fysioterapeuter med erfaring fra idrett
+                    og trening.</p>
+            </section>
+
+            <div class="statement">
+                <section class="card space-xl">
+                    <h3>Regine</h3>
+                    <img class="round" src="./imgs/profile_picture.jpg" alt="">
+                    <cite>""</cite>
+                    <p>Regine har tidligere vært fysioterapeut og basistrener for Olympiatoppen Vests toppidrettslinje,
+                        samt fysioterapeut for IL Sandviken Toppfotball og Fana IL Fotball.</p>
+                </section>
+            </div>
+            
+
+            <section class="statement space-m">
+                <p class="larger center">Vi holder til i Fyllingsdalen <br><br> <a class="larger center" onclick="toggle_modal_by_ID('modal-contact')">Krokatjønnveien 15</a></p>
+                <i class="fa-solid fa-location-dot fa-5x"></i>
+            </section>
+
+            <section class="statement">
+                <p class="larger">GRATIS PARKERING</p>
+                <i class="fa-solid fa-car fa-5x"></i>
+            </section>
+                
+            <section class="statement">
+                <i class="fa-solid fa-universal-access fa-5x"></i>
+                <p class="larger">TRAPPEFRI TILKOMST</p>
+            </section>
+        </article>
+
+        <article id="services">
+            <section class="statement">
+                <i class="fa-solid fa-user-injured fa-5x"></i>
+                <section>
+                    <h3>FYSIOTERAPI</h3>
+                    <p>Vi foretar undersøkelser og finner i samråd med kunden frem til den behandlingen som passer best.</p>
+                </section>
+            </section>
+            
+            <section class="statement space-m">
+                <i class="fa-solid fa-dumbbell fa-5x"></i>
+                <section>
+                    <h3>TRENING</h3>
+                    <p>Vi tilbyr trening for privatpersoner, grupper og foretak.</p>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <div class="modal" id="modal-contact" tabindex="0" aria-label="Vindu med kontaktinformasjon">
+        <div class="modal-content card rounded" tabindex="0" aria-label="Ring eller send e-post">
+            <h3>Ring eller send epost:</h3>
+            <div class="content">
+                <a href="tel:41793695" class="btn" tabindex="0" role="button" aria-label="Telefonnummer 4 1 7 9 3 6 9 5. Trykk for å ringe."><i class="fa fa-phone fa-xl"></i> 417 93 695</a>
+                <a href="mailto:regine@megingjord.no" class="btn" tabindex="0" role="button" aria-label="Epost-adresse regine@megingjord.no. Trykk for å sende epost."><i class="fa fa-at fa-xl"></i> regine@megingjord.no</a>
+                <iframe
+                width="100%"
+                height="450"
+                style="border:0; margin-top: 2rem;"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBBhkjBfX9PwwEvo9J24W43aFetUaYZ9tU&q=Fysioterapeut+Regine+Bjarnoll,Bergen+Norway&zoom=12">
+                </iframe>
+            </div>
+            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-contact')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
+        </div>
+    </div>
+</body>
+
+</html>

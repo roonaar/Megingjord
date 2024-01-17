@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    font-size: larger;
+}
+
+header img {
+    padding-top: 3rem;
+    height: 8em;
+}
+
+header p {
+    font-family: Georgia, Garamond, serif;
+}
+
+nav {
+    padding: 1rem;
+    text-align: center;
+}
+
+nav button {
+    font-size: large;
+}
+
+img.round {
+    position: absolute;
+    top: 0rem;
+    transform: translateY(-50%);
+    right: 2rem;
+    height: 6rem;
+    width: 6rem;
+    padding: .5rem;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: .75rem;
+    border-radius: 2rem;
+}
+
+.card {
+    position: relative;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    max-width: 600px;
+}
+
+.center {
+    text-align: center;
+}
+
+main article {
+    padding: 1.5rem;
+}
+
+#welcome h2 {
+    font-family: Georgia, Garamond, serif;
+    font-variant: small-caps;
+    font-size: x-large;
+}
+
+#welcome h3 {
+    font-family: Georgia, Garamond, serif;
+    padding-bottom: 1rem;
+}
+
+#welcome.card p {
+    margin-top: 3rem;
+}
+
+.space-s {
+    margin-top: 1rem;
+}
+
+.space-m {
+    margin-top: 2rem;
+}
+
+.space-l {
+    margin-top: 4rem;
+}
+
+.space-xl {
+    margin-top: 8rem;
+}
+
+.statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statement p {
+    max-width: 600px;
+    padding: 1rem;
+}
+
+.larger {
+    font-size: larger;
+}
