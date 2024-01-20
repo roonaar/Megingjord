@@ -13,7 +13,7 @@ let currentSlideIndex = 0;
 function showSlide(index) {
     slides.forEach((slide, i) => {
         if (i === index) {
-            slide.style.display = 'block';
+            slide.style.display = 'flex';
             indicators[i].classList.add('active');
         } else {
             slide.style.display = 'none';

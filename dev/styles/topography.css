@@ -1,32 +1,321 @@
 /* This style sheet will contain declarations for the site's topography. Theme styling will be declared in dev/styles/theme.css */
 
 /* Remove the default margin and padding from the body element */
-body{
+body {
     margin: 0;
     padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+/* Set the font family for h1, h2 and h3 */
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* A button that will be used throughout the site */
+button,
+a.button {
+    padding: 1rem;
+    /* Added to add space around the button */
+    border: 0.1rem solid var(--text-faded-color);
+    /* Removed the border from the button */
+    border-radius: 1.2rem;
+    /* Added to round the corners of the button */
+    cursor: pointer;
+    /* Added to change the cursor to a pointer when hovering over the button */
+    font-weight: bold;
+    /* Added to make the text bold */
+    text-decoration: none;
+    /* Removed the underline from the button */
 }
 
 /* The layout for the site's header. */
 header {
+    position: sticky;
+    /* Added to make the navigation sticky */
+    top: 0;
+    /* Added to position the navigation at the top of the viewport */
+    z-index: 100;
+    /* Added to ensure the navigation appears above other elements */
+    background-color: var(--main-bg-color);
+    /* Added to set the background color of the header */
     text-align: center;
-    width: 100%; /* Added to make the header span across the page */
-    display: flex; /* Added to enable flexbox layout */
-    justify-content: space-between; /* Added to distribute items across the header */
-    align-items: center; /* Added to vertically center items */
+    width: 100%;
+    /* Added to make the header span across the page */
+    display: flex;
+    /* Added to enable flexbox layout */
+    align-items: center;
+    /* Added to vertically center items */
+}
+
+header h3 {
+    overflow: hidden;
+    /* Added to hide the text when it overflows */
+    text-overflow: ellipsis;
+    /* Added to show ellipsis (...) when the text overflows */
+    white-space: nowrap;
+    /* Added to prevent line breaks in the text */
 }
 
 header img {
-    padding: 1rem; /* Added to add space around the logo */
-    width: 3rem; /* Set the width of the logo image */
-    height: auto; /* Maintain the aspect ratio of the image */
+    padding: 1rem;
+    /* Added to add space around the logo */
+    width: 3rem;
+    /* Set the width of the logo image */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
 }
 
-/* Style for the logo text */
-.logo-text {
-    /* Add your logo text styles here */
+/* The layout for the site's navigation. */
+header nav {
+    flex-grow: 1;
+    /* Added to make the nav element use the rest of the available space */
 }
 
-/* Style for the navigation items */
-.nav-items {
-    /* Add your navigation items styles here */
+header nav ul {
+    display: flex;
+    /* Added to enable flexbox layout */
+    justify-content: flex-end;
+    /* Added to distribute items across the header */
+    align-items: center;
+    /* Added to vertically center items */
+}
+
+header nav ul li {
+    padding: 1rem;
+    /* Added to add space around the navigation items */
+    list-style: none;
+    /* Added to remove the list indicator */
+    text-wrap: nowrap;
+    /* Added to prevent line breaks in the text */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* Removed the underline from the navigation items */
+    color: var(--main-color);
+    /* Added to set the text color of the navigation items */
+}
+
+/* Set standard properties for all sections */
+main section {
+    padding: 2rem;
+    /* Added to add space around the section */
+}
+
+@media screen and (max-width: 900px) {
+    header h3 {
+        display: none; /* Added to hide the heading on smaller screens */
+    }
+
+    /* Set standard properties for all sections */
+    main section {
+        padding: 1rem;
+        /* Less padding on smaller screens */
+    }
+
+    #use-cases .slide {
+        height: 400px;
+    }
+
+    #use-cases .slide img {
+        display: none; /* Added to hide the image on smaller screens */
+    }
+}
+
+
+/* The layout for the use case carousel. */
+#use-cases .carousel {
+    display: flex;
+    /* Added to enable flexbox layout */
+    justify-content: center;
+    /* Added to distribute items across the section */
+    align-items: center;
+    /* Added to vertically center items */
+}
+
+/* The layout for the use case carousel slides. */
+#use-cases .slide {
+    display: flex;
+    /* Added to enable flexbox layout */
+    justify-content: space-around;
+}
+
+#use-cases .slide article {
+    display: flex;
+    /* Added to enable flexbox layout */
+    flex-direction: column;
+    /* Added to set the direction of the flexbox layout */
+    flex: 1 480px;
+    max-width: 600px;
+    /* Set the width of the slide */
+}
+
+#use-cases .slide img {
+    margin-left: 1rem;
+    /* Added to add space around the image */
+    max-width: 480px;
+    /* Set the width of the image */
+}
+
+#use-cases .slide h2 {
+    overflow-wrap: break-word;
+    /* Added to wrap the heading text */
+    word-break: normal;
+    /* Added to break the heading text */
+    hyphens: auto;
+    /* Added to hyphenate the heading text */
+}
+
+#use-cases .slide article p {
+    flex-grow: 1;
+}
+
+#use-cases .slide a.button {
+    align-self: start;
+    /* Added to align the button to the bottom of the slide */
+}
+
+#use-cases .carousel-controls {
+    display: flex;
+    /* Added to enable flexbox layout */
+    justify-content: center;
+    /* Added to distribute items across the section */
+    align-items: center;
+    /* Added to vertically center items */
+    padding-top: 3rem;
+    /* Added to add space around the section */
+}
+
+#use-cases .prev-slide,
+#use-cases .next-slide {
+    background-color: transparent;
+    /* Added to set the background color of the button */
+    border: none;
+    color: var(--action-color);
+    /* Added to set the text color of the button */
+}
+
+#use-cases .indicator {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 0.5rem;
+}
+
+#use-cases .indicator.active {
+    background-color: var(--action-color);
+}
+
+/* The layout for the section about the companys' services */
+#services {
+    display: flex;
+    /* Added to enable flexbox layout */
+    flex-direction: column;
+    /* Added to set the direction of the flexbox layout */
+    justify-content: space-between;
+    /* Added to distribute items across the section */
+    align-items: center;
+    /* Added to vertically center items */
+}
+
+#services h2 {
+    overflow-wrap: break-word;
+    /* Added to wrap the heading text */
+    word-break: normal;
+    /* Added to break the heading text */
+    hyphens: auto;
+    /* Added to hyphenate the heading text */
+    margin-top: 5rem;
+    /* Added to add space around the section */
+}
+
+#services dl {
+    display: flex;
+    /* Added to enable flexbox layout */
+    align-items: center;
+    /* Added to vertically center items */
+    flex-wrap: wrap;
+    /* Added to wrap items in the flexbox layout */
+}
+
+#services dl dt {
+    flex: 1 400px;
+    /* Added to set the width of the service item */
+    min-height: 480px;
+    padding: 2rem;
+    /* Added to add space around the section */
+    margin: 1rem;
+    display: flex;  
+    /* Added to enable flexbox layout */
+    flex-direction: column;
+    /* Added to set the direction of the flexbox layout */
+    background-color: var(--panel-color);
+}
+
+#services dl dt img {
+    align-self: center;
+    /* Added to center the service icon */
+    max-height: 5rem;
+    /* Set the width of the service icon */
+    width: fit-content;
+    /* Added to set the width of the service icon */
+    padding-bottom: 2rem;
+}
+
+#services ul {
+    flex-grow: 1;
+    /* Added to make the text fill the available space */
+}
+
+#portfolio h2 {
+    overflow-wrap: break-word;
+    /* Added to wrap the heading text */
+    word-break: normal;
+    /* Added to break the heading text */
+    hyphens: auto;
+    /* Added to hyphenate the heading text */
+    margin-top: 5rem;
+    /* Added to add space around the section */
+}
+
+#portfolio p {
+    margin-top: 2rem;
+    /* Added to add space around the button */
+    margin-bottom: 4rem;
+    /* Added to add space above the element */
+}
+
+#portfolio dl dt img {
+    height: 4rem;
+    /* Set the height of the service icon */
+}
+
+#about-us img {
+    width: 100%;
+    /* Set the width of the image */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+}
+
+footer {
+    padding: 2rem;
+    /* Added to add space around the footer */
+    display: flex;
+    /* Added to enable flexbox layout */
+    justify-content: space-around;
+    /* Added to distribute items across the footer */
+    background-color: var(--panel-color);
+}
+
+footer a {
+    color: var(--main-color);
+    /* Added to set the text color of the footer links */
+    text-decoration: none;
+    /* Removed the underline from the footer links */
 }
