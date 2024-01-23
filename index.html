@@ -6,17 +6,15 @@
     <meta name="description" content="Kom i gang med behandling og trening hos fysioterapeut Regine Bjarnoll." />
     <meta name="keywords" content="Fysioterapi, Trening, Helse, Folkehelse, Ernæring, Idrett, Idrettsmedisin, Idrettsskade, BasisBall">
 
-    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imgs/megingjord.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/topography.css">
+    <link rel="stylesheet" href="./styles/theme.css">
 
-    <link rel="stylesheet" href="./styles/main_flow.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/modal.css">
-    <link rel="stylesheet" href="./styles/slideshow.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
 
-    <script src="./scripts/google.js"></script>
-    <script src="./scripts/responsive.js"></script>
-    <script type="module" src="./scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/1fa25c76d6.js" crossorigin="anonymous"></script>
+    <script src="./scripts/carousel.js" defer></script>
+    <script src="./scripts/toggle.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220987674-1"></script>
@@ -28,194 +26,298 @@
         gtag('config', 'UA-220987674-1');
     </script>
 
-    <title>Fysioterapeut Regine Bjarnoll</title>
-    
+    <title>Megingjord</title>
 </head>
 <body>
-    <nav class="nav nav-main" role="navigation">
-        <h3 class="nav-context">Fysioterapi</h3>
-        <i class="nav-opener fa fa-bars fa-xl clickable" onclick="toggle_menu()" tabindex="0" role="button" aria-label="Meny"></i>
-        <ul class="nav-drop-down" id="nav-drop-down" role="menu">
-            <li role="none"><a class="nav-item clickable" href="https://helse.aspit.no/landing?clinicId=06EADA0A-A030-4BEC-A477-5E198845B84C" tabindex="0" role="menuitem"><i class="fa-solid fa-calendar-plus fa-xl"></i> Bestill time</a></li>
-            <li class="nav-item clickable" onclick="toggle_modal_by_ID('modal-contact')" tabindex="0" role="menuitem"><i class="fa-solid fa-comments fa-xl"></i> Kontakt</li>
-            <li class="nav-item clickable" onclick="toggle_modal_by_ID('modal-pricing')" tabindex="0" role="menuitem"><i class="fa-solid fa-coins fa-xl"></i> Priser</li>
-            <li class="nav-item clickable" id="open-hrs" onclick="toggle_modal_by_ID('modal-open-hrs')" role="menuitem" tabindex="0"><i class="fa-solid fa-clock fa-xl"></i> Åpningstider</li>
-        </ul>
-        <a href="https://helse.aspit.no/landing?clinicId=06EADA0A-A030-4BEC-A477-5E198845B84C" class="btn nav-order clickable" role="button" title="Bestill time på aspit.no"><i class="fa-solid fa-calendar-plus"></i> Bestill time</a>
-    </nav>
-    <main role="main">
-        <article id="intro" aria-label="Introduksjon">
-            <img src="./imgs/logo.png" alt="Fysioterapeut Regine Bjarnoll sin logo." role="img">
-            <section>
-                <p>Regine ble utdannet fysioterapeut ved Universitetet i Syddanmark avd Esbjerg i 2016. Hun har siden det jobbet som privat fysioterapeut i Bergensområdet og driver nå sin egen klinikk på Midttun. Hun har erfaring med å jobbe med pasienter i alle aldre, og har i tillegg erfaring fra arbeid med unge og voksne idrettsutøvere, både på bredde- og toppnivå.</p>
-                <p>Utover fysioterapiutdannelsen har Regine medisin grunnfag fra Atlantis Medisinske Høyskole og årsenhet i ernæring ved Høyskolen Kristiania. Hun har også videreutdannelse i neuromotorisk trening og NIMI idrettsmedisin 1 og 2.</p>
-            </section>
-        </article>
-        <div class="center">
-            <a href="https://www.facebook.com/fysiobjarnoll" title="@fysioBjarnoll på Facebook"><img src="./imgs/logos/svgs/facebook-brands.svg" alt="Link til Facebook"></a>
-            <a href="https://www.instagram.com/fysiobjarnoll" title="@fysioBjarnoll på Instagram"><img src="./imgs/logos/svgs/instagram-square-brands.svg" alt="Link til Instagram"></a>
-            <a href="https://www.youtube.com/channel/UCy0nw6GyDDo1k7lay7rOwWQ" title="@fysioBjarnoll på YouTube"><img src="./imgs/logos/svgs/youtube-brands.svg" alt="Link til YouTube"></a>
-            <a href="https://www.boon.tv/fysiobjarnoll" title="@fysioBjarnoll på Boon"><img src="./imgs/logos/Boon-logotype-black.png" alt="Link til Boon.tv"></a>
-        </div>
-        <article id="experience" aria-label="Erfaring">
-            <h2>Erfaring</h2>
-                <div class="slideshow" id="xp">
-                    <a class="slide fade" href="https://www.idrettsforbundet.no">
-                        <img src="./imgs/Regine_01.png" alt="">
-                        <h3>Norges Idrettsforbund</h3>
-                        <p>Fysioterapeut og basistrener for Toppidrettslinjen</p>
-                        <p>Fysioterapeut i Olympiatoppen Vest sitt eksterne behandlernettverk</p>
-                        <p>Deltaker i Olympiatoppen Next Generation program 2018/19</p>
-                    </a>
-                    <a class="slide fade" href="https://www.brann.no/lag/sk-brann-kvinner">
-                        <img src="./imgs/logos/sandviken.png" alt="">
-                        <h3>IL Sandviken Toppfotball</h3>
-                        <p>Fysioterapeut</p>
-                    </a>
-                    <a class="slide fade" href="https://www.fanail.no">
-                        <img src="./imgs/logos/fanafotball.png" alt="">
-                        <h3>Fana IL og Fana IL Fotball</h3>
-                        <p>Fysioterapeut</p>
-                    </a>
-                    <a class="slide fade">
-                        <img src="./imgs/Regine_04.png" alt="">
-                        <h3>Førevar AS</h3>
-                        <p>Leverandør av bedriftshelsetjenester</p>
-                    </a>
-                    <a class="slide fade" href="https://www.equinor.no">
-                        <img src="./imgs/Regine_05.png" alt="">
-                        <h3>Equinor ASA</h3>
-                        <p>Leverandør av fysioterapi og trening for Equinor Mongstad</p>
-                    </a>
-                    <a class="slide fade" href="https://games.crossfit.com/regionals/overview">
-                        <img src="./imgs/Regine_06.png" alt="">
-                        <h3>CrossFit Games Regionals</h3>
-                        <p>Akuttmedisinsk fysioterapeut under EM i CrossFit, Madrid, 2016</p>
-                    </a>
-                    <a class="slide fade">
-                        <img src="./imgs/Regine_03.png" alt="">
-                        <h3>Vestland Idrettsmedisinske forening</h3>
-                        <p>Styremedlem 2017-2021</p>
-                    </a>
-                    <i class="prev-btn fa-solid fa-angle-left"></i>
-                    <i class="next-btn fa-solid fa-angle-right"></i>
-                    <div class="dot-container">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-        </article>
-        <article id="cooperation" tabindex="0" aria-label="Samarbeidspartnere">
-            <h2>Samarbeidspartnere</h2>
-                <div class="slideshow" id="coop">
-                    <a class="slide fade" href="https://www.basisball.com">
-                        <img src="./imgs/logos/basisball.png" alt="">
-                        <h3>BasisBall</h3>
-                        <p>Regine er BasisBall-trainer og -ambassadør</p>
-                    </a>
-                    <a class="slide fade" href="https://www.behandlernettverk.no">
-                        <img src="./imgs/logos/behandlernettverkno-medlem-liten.png" alt="">
-                        <h3>Behandlernettverk.no</h3>
-                        <p>Regine er medlem av behandlernettverket som kobler forsikringsselskap og tjenesteleverandører med behandlere.</p>
-                        <p>Se hvilke selskap som er med i avtalen.</p>
-                    </a>
-                    <a class="slide fade" href="https://www.nordicnetcare.no">
-                        <img src="./imgs/logos/nordicnetcare.png" alt="">
-                        <h3>Nordic Netcare</h3>
-                        <p>Regine leverer fysioterapi for dette private helsetilbudet som koordinerer behandlingsforløpet for kunder hos en rekke forsikringsselskaper i Norge, Sverige og Danmark.</p>
-                    </a>
-                    <a class="slide fade" id="idrettshelse" href="https://www.idrettshelse.no/">
-                        <img src="./imgs/logos/svgs/idrettens_helsesenter.svg" alt="">
-                        <h3>Idrettens Helsesenter</h3>
-                        <p>Regine er fysioterapeut i behandlernettverket som er spesialisert mot idrettsrelaterte skader.</p>
-                    </a>
-                    <a class="slide fade" href="https://www.rocktape.no">
-                        <img src="./imgs/logos/rocktape.png" alt="">
-                        <h3>RockTape</h3>
-                        <p>RockTape er markedets beste kinesologitape og benyttes ved behandling av en rekke tilstander.</p>
-                        <p>RockTape har også andre produkter som brukes i aktivitet, idrett og rehabilitering.</p>
-                    </a>
-                    <i class="prev-btn fa-solid fa-angle-left"></i>
-                    <i class="next-btn fa-solid fa-angle-right"></i>
-                    <div class="dot-container">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-        </article>
-    </main>
-    <footer>
-        <nav class="nav nav-footer" role="navigation">
-            <ul role="menu">
-                <li class="nav-item clickable" onclick="scroll_to_top()" tabindex="0" role="menuitem">Til toppen</li>
-                <li class="nav-item clickable" onclick="scroll_to_element_by_ID('experience')" tabindex="0" role="menuitem">Erfaring</li>
-                <li class="nav-item clickable" onclick="scroll_to_element_by_ID('cooperation')" tabindex="0" role="menuitem">Samarbeidspartnere</li>
+    <!-- Headline with logo and nav. -->
+    <header>
+        <!-- Logo -->
+        <a href="#"><img src="./imgs/megingjord.png"></a>
+
+        <!-- On larger screens we want to display the company name. -->
+        <h3>Megingjord</h3>
+
+        <!-- Nav -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#services" rel="tag">Tjenester</a></li>
+                <li><a href="#portfolio" rel="tag">Erfaring</a></li>
+                <li><a href="#about-us" rel="tag">Om oss</a></li>
+                <li><a href="#contact" rel="tag">Kontakt</a></li>
             </ul>
-            <a href="https://github.com/roonaar" class="dev"><i class="fa-brands fa-github"></i> @roonaar</a>
         </nav>
-    </footer>
-    <div class="modal" id="modal-contact" tabindex="0" aria-label="Vindu med kontaktinformasjon">
-        <div class="modal-content card rounded" tabindex="0" aria-label="Ring eller send e-post">
-            <h3>Ring eller send epost:</h3>
-            <div class="content">
-                <a href="tel:41793695" class="btn clickable" tabindex="0" role="button" aria-label="Telefonnummer 4 1 7 9 3 6 9 5. Trykk for å ringe."><i class="fa fa-phone fa-xl"></i> 417 93 695</a>
-                <a href="mailto:fysio@bjarnoll.no" class="btn clickable" tabindex="0" role="button" aria-label="Epost-adresse fysio@bjarnoll.no. Trykk for å sende epost."><i class="fa fa-at fa-xl"></i> fysio@bjarnoll.no</a>
-                <iframe
-                width="100%"
-                height="450"
-                style="border:0; margin-top: 2rem;"
-                loading="lazy"
-                allowfullscreen
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBBhkjBfX9PwwEvo9J24W43aFetUaYZ9tU&q=Fysioterapeut+Regine+Bjarnoll,Bergen+Norway&zoom=12">
-                </iframe>
+        <button class="hamburger"><img src="./imgs/icons/bars.svg" alt=""></button>
+        <button class="order">Bestill time</button>
+    </header>
+    <main>
+        <dialog>
+            <div>
+                <p>Vennligst velg hvilken avdeling du ønsker å bestille time hos:</p>
+                <section>
+                    <a href="https://helse.aspit.no/landing?clinicId=06eada0a-a030-4bec-a477-5e198845b84c"><h1>Fyllingsdalen</h1></a>
+                </section>
+                <section>
+                    <a href="https://helse.aspit.no/landing?clinicId=feb48182-3e36-4a00-acdc-106175430cc3"><h1>Mongstad</h1></a>
+                </section>
+                <button type="button" class="no-border">Lukk vindu</button>
             </div>
-            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-contact')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
-        </div>
-    </div>
-    <div class="modal" id="modal-pricing" tabindex="0" aria-label="Vindu med prisinformasjon">
-        <div class="modal-content card rounded">
-            <h2>Priser:</h2>
-            <section class="content">
-                <h4>Førstegangskonsultasjon*</h4>
-                <p>kr 800,-</p>
-                <p><em>*kr 650,- ved ny skade eller dersom det har gått mer enn 1 år siden sist behandling.</em></p>
-                <h4>Oppfølgende behandling (inntil 25 min)</h4>
-                <p>kr 510,-</p>
-                <h4>Utvidet oppfølgende behandling (inntil 45 min)</h4>
-                <p>kr 650,-</p>
-            </section>
-            <p><em>Avbestillingsfrist er senest 24 timer før avtaletid. Timer som kanselleres etter avbestillingsfristen faktureres med full pris.</em></p>
-            <details>
-                <summary>
-                    <p>Studenter og barn under 16 år får 20 % rabatt</p>
-                </summary>
-                <p><em>Gyldig studentbevis må kunne fremvises på forespørsel.</em></p>
-            </details>
-            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-pricing')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
-        </div>
-    </div>
-    <div class="modal" id="modal-open-hrs" tabindex="0" aria-label="Vindu med åpningstider">
-        <div class="modal-content card rounded">
-            <h2>Åpningstider:</h2>
-            <section class="content">
-                <h4>Mandag</h4>
-                <p>Stengt</p>
-                <h4>Tirsdag - Torsdag</h4>
-                <p>Åpent fra 10 til 15</p>
-                <h4>Fredag - Søndag</h4>
-                <p>Stengt</p>
-            </section>
-            <p><em>Telefonen besvares alle hverdager fra 9 til 15.</em></p>
-            <i class="close fa-solid fa-xmark" onclick="toggle_modal_by_ID('modal-open-hrs')" tabindex="0" role="button" aria-label="Lukk vindu"></i>
-        </div>
-    </div>
+        </dialog>
+        <!-- Section with examples of which use cases we are solving, presented in a very simple carousel view with a link for further reading. -->
+        <section id="use-cases">
+            <!-- Carousel with controls and indicators to cycle the slides -->
+            <dl class="carousel">
+                <!-- Slide 1 -->
+                <dt class="slide">
+                    <article>
+                        <h1>Akutte smerter?</h1>
+                        <p>Akutte smerter kan være et varselssignal fra kroppen om at noe er galt. Noen ganger er årsaken åpenbar som ved brudd og forstuvninger, men kan også forårsakes av f.eks. betennelser. Slike smerter er vanligvis kortvarige, varer fra noen få øyeblikk til maksimalt tre måneder, og avtar som regel når den underliggende årsaken blir behandlet.</p>
+                        <p>Våre behandlere kan gi råd og veiledning, og i de fleste tilfeller sette i gang behandling for at du raskere skal bli kvitt plagene.</p>
+                    </article>
+                    <img src="./imgs/neck-pain.png">
+                </dt>
+
+                <!-- Slide 2 -->
+                <dt class="slide">
+                    <article>
+                        <h1>Langvarige smerter?</h1>
+                        <p>Langvarige smerter, ofte kalt kroniske smerter, er smerter som varer i en lengre periode, vanligvis over 12 uker eller mer. Disse smertene kan fortsette selv etter at den opprinnelige skaden eller sykdommen er leget. Kroniske smerter kan stamme fra en rekke kilder, som vedvarende helseproblemer (for eksempel leddgikt eller kreft), nerveskader, eller de kan ha en ukjent årsak.</p>
+                    </article>
+                    <img src="./imgs/back-pain.png">
+                </dt>
+
+                <!-- Slide 3 -->
+                <dt class="slide">
+                    <article>
+                        <h1>Nedsatt funksjon?</h1>
+                        <p>Funksjonsnedsettelse kan påvirke evnen til å utføre visse dagligdagse aktiviteter og kan være forårsaket av en rekke faktorer, som medfødte tilstander, skader, sykdommer, eller aldersrelaterte forandringer.</p>
+                        <p>Med riktig behandling kan innvirkningen funksjonsnedsettelsen har på arbeid, utdanning og sosial deltakelse reduseres.</p>
+                    </article>
+                    <img src="./imgs/achiever.png">
+                </dt>
+            </dl>
+
+            <!-- Carousel indicators -->
+            <div class="carousel-controls">
+                <button class="prev-slide no-border">Forrige</button>
+                <button class="indicator active"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+                <button class="next-slide no-border">Neste</button>
+            </div>
+        </section>
+
+        <!-- Section with examples of how we can solve the use cases. -->
+        <section id="services">
+                <h1>Slik kan vi hjelpe deg</h1>
+
+            <!-- A list with an icon and a descriptive text for a service that a user can click to learn more. -->
+            <dl>
+                <dt class="card">
+                    <img src="./imgs/Regine_01.png">
+                    <h3>Utredning</h3>
+                    <p>Inkluderer blant annet:</p>
+                    <ul>
+                        <li>Undersøkelse</li>
+                        <li>Diagnostisering</li>
+                        <li>Behandlingsplan</li>
+                    </ul>
+                </dt>
+                <dt class="card">
+                    <img src="./imgs/Regine_02.png">
+                    <h3>Behandling</h3>
+                    <p>Har man fått påvist muskel- og skjelettplager kan vi blant annet tilby:</p>
+                    <ul>
+                        <li>Manuellterapi</li>
+                        <li>IMS (dry needle)</li>
+                        <li>Aktivitetsmedisin</li>
+                    </ul>
+                </dt>
+                <dt class="card">
+                    <img src="./imgs/Regine_03.png">
+                    <h3>Forebygging</h3>
+                    <p>Vi har løsninger for enkeltindivider eller grupper:</p>
+                    <ul>
+                        <li>Veiledning</li>
+                        <li>Oppfølging</li>
+                        <li>Trening</li>
+                    </ul>
+                </dt>
+                <dt class="card">
+                    <img src="./imgs/Regine_04.png">
+                    <h3>Bedriftshelse</h3>
+                    <p>Vi tilbyr tjenester for å forebygge og redusere sykefravær. Dette inkluderer blant annet:</p>
+                    <ul>
+                        <li>Bedriftsfysioterapi</li>
+                        <li>Bedriftstrening</li>
+                        <li>Arbeidsplassvurdering</li>
+                    </ul>
+                </dt>
+            </dl>
+        </section>
+
+        <!-- Section with portfolio. Where we show what we have done. -->
+        <section id="portfolio">
+            <header>
+                <h1>Bred kompetanse og lang erfaring</h1>
+                <p>Hos oss møter du dyktige og engasjerte fysioterapeuter med kompetanse og erfaring innenfor flere felt.</p>
+            </header>
+            <article>
+                <h2>Idrettsmedisin</h2>
+                <section>
+                    <details>
+                        <summary>
+                            <img src="./imgs/Regine_01.png" alt="">
+                            <p>Toppidrettslinjen</p>
+                        </summary>
+                        <p>Regine har levert fysioterapi og basistrening.</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <img src="./imgs/Regine_02.png" alt="">
+                            <p>Olympiatoppen Vest</p>
+                        </summary>
+                        <p>Regine har levert fysioterapi i Olympiatoppen Vest sitt eksterne behandlernettverk og var deltaker i Olympiatoppen Next Generation program 2018/19.</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <img src="./imgs/logos/sandviken.png" alt="">
+                            <p>Sandviken Toppfotball</p>
+                        </summary>
+                        <p>Fysioterapi</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <img src="./imgs/logos/fana.png" alt="">
+                            <p>Fana IL</p>
+                        </summary>
+                        <p>Fysioterapi</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <img src="./imgs/logos/fanafotball.png" alt="">
+                            <p>Fana IL Fotball</p>
+                        </summary>
+                        <p>Fysioterapi</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <img src="./imgs/logos/crossfit.png" alt="">
+                            <p>CrossFit Games</p>
+                        </summary>
+                        <p>Regine var frivillig akuttmedisinsk fysioterapeut under EM i Madrid, 2016.</p>
+                    </details>
+                </section>
+                <h2>Bedriftshelse</h2>
+                <section>
+                    <details>
+                        <summary>
+                            <img src="./imgs/Regine_03.png" alt="">
+                            <p>Equinor Mongstad</p>
+                        </summary>
+                        <p>Vi har levert fysioterapi og trening til Equinor Mongstad siden 2017.</p>
+                    </details>
+                </section>
+                <h2>Kvinnehelse</h2>
+                <p>Vi leverer barseltrening for AdO arena og Progresjon.</p>
+                <section>
+                    <a href="https://adoarena.no/kurs-aktiviteter/">
+                        <img id="ado-arena" src="./imgs/logos/svgs/ado-web-white.svg" alt="">
+                        <p>AdO arena</p>
+                    </a>
+                    <a href="https://progresjon.no/barseltrening/">
+                        <img src="./imgs/logos/progresjon-logo.png" alt="">
+                        <p>Progresjon</p>
+                    </a>
+                </section>
+                <h2>Forsikring</h2>
+                <p>Vi leverer fysikalsk behandling for en rekke forsikringsselskaper i Norge. Hør med din rådgiver om du har rett til å få dekket behandling.</p>
+                <section>
+                    <a href="https://vertikalhelse.no">
+                        <img src="./imgs/logos/if-vertikal-helse-rgb.png" alt="">
+                        <p>Vertikal Helse</p>
+                    </a>
+                    <a href="https://falck.no">
+                        <img src="./imgs/logos/falck-logo-red.png" alt="">
+                        <p>Falck</p>
+                    </a>
+                    <a href="https://tryg.no">
+                        <img src="./imgs/logos/svgs/tryg-logo.svg" alt="">
+                        <p>Tryg</p>
+                    </a>
+                    <a href="https://idrettshelse.no">
+                        <img id="idrettens-helsesenter" src="./imgs/logos/svgs/idrettens_helsesenter.svg" alt="">
+                        <p>Idrettens Helsesenter</p>
+                    </a>
+                </section>
+            </article>
+        </section>
+
+        <!-- Section with testimonials. What people say about our work. -->
+        <section id="testimonials">
+        </section>
+
+        <!-- Super short section that shows the team. -->
+        <section id="about-us">
+            <h1>Profesjonelle behandlere</h1>
+            <article>
+                <section>
+                    <img src="./imgs/regine.png">
+                    <h2>Regine</h2>
+                    <p>Fysioterapeut og daglig leder</p>
+                    <a href="mailto:regine@megingjord.no">regine@megingjord.no</a>
+                    <a href="tel:+4741793695">417 93 695</a>
+                </section>
+                <section>
+                    <img src="./imgs/stig-andre.png">
+                    <h2>Stig André</h2>
+                    <p>Fysioterapeut</p>
+                    <a href="mailto:stigandre@megingjord.no">stigandre@megingjord.no</a>
+                    <a href="tel:+4797700385">977 00 385</a>
+                </section>
+                <section>
+                    <img src="./imgs/Regine_01.png">
+                    <h2>Dan Kristian</h2>
+                    <p>Fysioterapeut</p>
+                    <a href="mailto:dankristian@megingjord.no">dankristian@megingjord.no</a>
+                    <a href="tel:+4741793695">417 93 695</a>
+                </section>
+            </article>
+        </section>
+
+        <!-- Section with FAQ. Answers to common questions. -->
+        <section id="faq">
+        </section>
+
+        <!-- Call to action. After reading the whole page, somone might want to use our services. -->
+        <section id="cta">
+            <h1>Ta gjerne kontakt med oss for en uforpliktende samtale om hvordan <span class="action">vi kan hjelpe deg</span>.</h1>
+        </section>
+    </main>
+
+    <!-- Footer with contact info and social media links. -->
+    <footer>
+        <section id="contact">
+            <h4>Megingjord AS</h4>
+            <p><strong>Fyllingsdalen</strong></p>
+            <address>Krokatjønnveien 15, <br>
+                5147 Fyllingsdalen
+            </address>
+            <p><strong>Mongstad</strong></p>
+            <address>Mongstad 56, <br>
+                5954 Mongstad
+            </address>
+            <p>Telefon: <a href="tel:+4741793695">417 93 695</a></p>
+            <p>E-post: <a href="mailto:post@megingjord.no">post@megingjord.no</a></p>
+            
+        </section>
+        <section>
+            <h4>Følg oss</h4>
+            <ul>
+                <li><a href="https://facebook.com/megingjord.no" rel="external"><img src="./imgs/logos/svgs/facebook-brands.svg"></a></li>
+                <li><a href="https://instagram.com/megingjord.no" rel="external"><img src="./imgs/logos/svgs/instagram-square-brands.svg"></li>
+                <li><a href="https://linkedin.com/company/megingjord" rel="external"><img src="./imgs/logos/svgs/linkedin-brands.svg"></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>

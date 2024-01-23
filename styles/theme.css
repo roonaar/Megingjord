@@ -2,95 +2,103 @@
     --main-bg-color: hsl(180, 4%, 15%);
     --secondary-bg-color: #DCAEA1;
     --dark-color: #1A2129;
-    /*--light-color: #EBF4FF;*/
-    /*--accent-color: hsl(5, 94%, 67%);*/
+    --light-main-color: #EBF4FF;
     --accent-color: #e63737;
     --action-color: hsl(180, 78%, 35%);
     --text-color: hsl(180, 17%, 91%);
     --main-color: #5dc6c6;
-    /*--secondary-color: #c28170;*/
     --secondary-color: hsl(0, 29%, 56%);
     --panel-color: #181b1b;
-    --light-color: hsl(0, 7%, 91%);
-    /*--text-color: #dee5ed;*/
+    --light-accent-color: hsl(0, 7%, 91%);
     --text-faded-color: hsl(180, 29%, 57%);
 }
 
 body {
     background-color: var(--main-bg-color);
-}
-
-header {
-    color: var(--light-color);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-main h1{
-    color: var(--light-color);
-}
-
-main p {
     color: var(--text-color);
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
 
-#welcome section h3 {
-    color: var(--light-color);
+h1,
+h2,
+h3,
+h4 { /* Set the font family for h1, h2 and h3 */
+    font-family: 'Montserrat', sans-serif;
+    overflow-wrap: break-word;    /* Added to wrap the heading text */
+    word-break: normal;    /* Added to break the heading text */
+    hyphens: auto;    /* Added to hyphenate the heading text */
 }
 
-#welcome section p {
-    color: var(--text-color);
+button, a.button {
+    background-color: rgba(255, 255, 255, 0.05); /* Added to set the background color of the button */
+    color: var(--main-color); /* Added to set the text color of the button */
+    font-size: 1rem; /* Added to set the font size of the button */
+    font-weight: bold;
+    padding: 1rem; /* Added to add space around the button */
+    border: 0.1rem solid var(--text-faded-color);    /* Removed the border from the button */
+    border-radius: 1.2rem;    /* Added to round the corners of the button */
+    cursor: pointer;    /* Added to change the cursor to a pointer when hovering over the button */
+    font-weight: bold;    /* Added to make the text bold */
+    text-decoration: none;    /* Removed the underline from the button */
 }
 
-#welcome section cite {
-    color: var(--secondary-color);
+.no-border {
+    background-color: transparent;
+    border: none;
 }
 
-#services {
-    background-color: var(--panel-color);
-    color: var(--text-color);
+.order {
+    background-color: var(--accent-color);
+    color: var(--text-color);    /* Added to set the background color of the button */
+    border: none;
 }
 
-a {
-    color: var(--action-color);
-}
-
-a:hover {
-    color: var(--accent-color);
-}
-
-img.round {
-    background-color: var(--secondary-color);
+.action {
+    color: var(--action-color)
 }
 
 .card {
-    background-color: var(--panel-color);
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn {
+
+header { /* The layout for the site's header. */
     background-color: var(--main-bg-color);
-    color: var(--text-color);
-    font-weight: 600;
-    border: 0.1rem solid var(--action-color);
 }
 
-.btn:hover {
-    background-color: var(--action-color);
-    border-color: var(--text-color);
+header nav ul li a {
+    text-decoration: none;    /* Removed the underline from the navigation items */
+    color: var(--main-color);    /* Added to set the text color of the navigation items */
 }
 
-#order {
+main > dialog {
     background-color: var(--panel-color);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    color: var(--text-color);
+    border-radius: 1.2rem;
 }
 
-#order:hover {
-    background-color: var(--action-color);
+main > dialog a {
+    color: var(--accent-color);    /* Added to set the text color of the dialog links */
+    text-decoration: none;    /* Removed the underline from the dialog links */
 }
 
-.fa-location-dot {
-    color: var(--secondary-color);
+#portfolio article #idrettens-helsesenter {
+    background-color: #554099;
 }
 
-.fa-universal-access, .fa-car, .fa-handshake-simple{
-    color: var(--text-faded-color);
+#portfolio #ado-arena {
+    background-color: #192561;
+}
+
+
+footer a {
+    color: var(--main-color);    /* Added to set the text color of the footer links */
+    text-decoration: none;    /* Removed the underline from the footer links */
+}
+
+footer li {
+    list-style: none;    /* Removed the list indicator from the footer links */
 }
