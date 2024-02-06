@@ -178,13 +178,13 @@ main > section {
     margin-top: 5rem;    /* Added to add space around the section */
 }
 
-#services dl {
+#services article {
     display: flex;    /* Added to enable flexbox layout */
     align-items: center;    /* Added to vertically center items */
     flex-wrap: wrap;    /* Added to wrap items in the flexbox layout */
 }
 
-#services dl dt {
+#services article section {
     flex: 1 400px;    /* Added to set the width of the service item */
     min-height: 480px;
     padding: 2rem;    /* Added to add space around the section */
@@ -194,7 +194,7 @@ main > section {
     background-color: var(--panel-color);
 }
 
-#services dl dt img {
+#services article section img {
     align-self: center;    /* Added to center the service icon */
     max-height: 5rem;    /* Set the width of the service icon */
     width: fit-content;    /* Added to set the width of the service icon */
@@ -332,6 +332,10 @@ main > section {
     margin: 0.8rem;    /* Added to add space around the link */
 }
 
+#about-us article > section i {
+    margin: 0.8rem;    /* Added to add space around the link */
+}
+
 footer {
     padding: 2rem;    /* Added to add space around the footer */
     display: flex;    /* Added to enable flexbox layout */
@@ -339,3 +343,7 @@ footer {
     background-color: var(--panel-color);
 }
 
+#contact i {
+    color: var(--light-accent-color);    /* Added to set the text color of the icon */
+    margin-right: 0.8rem;    /* Added to add space around the link */
+}
